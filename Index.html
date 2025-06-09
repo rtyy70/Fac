@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    .image-container {
+      width: 300px; /* изначальная ширина */
+      height: 200px; /* изначальная высота */
+      overflow: hidden;
+      transition: all 0.5s ease;
+      border: 2px solid #333;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .image-container:hover {
+      width: auto; /* автоматическая ширина по размеру картинки */
+      height: auto; /* автоматическая высота по размеру картинки */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-container">
+    <img src="https://via.placeholder.com/600x400" alt="Пример картинки" />
+  </div>
+
+</body>
+</html>
